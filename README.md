@@ -1,4 +1,4 @@
-**Change Detection:**
+**Change Detection**
 
 **Default Change Detection:** 
 Angular will check the parent and child component on every change detection cycle, even when the changes do not directly affect the component.
