@@ -1,0 +1,12 @@
+<div class="parent-class">
+    <h3>{{ name }}</h3>
+    <p>Non-Primitive Data: {{ nonPrimitiveData.message }}</p>
+    <p>Service Data in Parent: {{ parentServiceData }}</p>
+    <button (click)="updateServiceData()">Update Service Data in Parent</button>
+    <p>
+        <button (click)="updateName()">Update Name</button>
+        <button (click)="updateNonPrimitiveWithoutRef()">Update Non-Primitive Data (without Ref)</button>
+        <button (click)="updateNonPrimitiveWithRef()">Update Non-Primitive Data (With Ref.)</button>
+    </p>
+    <app-child [data]="nonPrimitiveData"></app-child>
+</div>

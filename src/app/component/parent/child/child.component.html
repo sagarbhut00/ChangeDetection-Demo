@@ -1,0 +1,10 @@
+<div class="child-class">
+    <h3>{{ childData }}</h3>
+    <p>Data from Parent: {{ data.message }}</p>
+    <p>Service Data in Child: {{ childServiceData }}</p>
+    <button (click)="updateServiceData()">Update Service Data in Child</button>
+    <button (click)="getServiceData()">Get Service Data</button>
+    <p>
+        <button (click)="updateChildData()">Update Child Data</button>
+    </p>
+</div>
